@@ -1,12 +1,13 @@
 #include <iostream>
 
+#include "../../netscilib/common/typedef.hpp"
 #include "../../netscilib/data_structures_building_blocks/data_structures_building_blocks_common.hpp"
 #include "../../netscilib/data_structures_building_blocks/array.hpp"
 
 int main()
 {
 	int num_of_elem = 10;
-	SimpleArray<float, int> objArray(num_of_elem);
+	SimpleArray<float> objArray(num_of_elem);
 	
 	std::cout << objArray.get_number_of_elements() << std::endl;
 	
